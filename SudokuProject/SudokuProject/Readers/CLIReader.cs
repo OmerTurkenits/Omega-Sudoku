@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject
+namespace SudokuProj
 { 
     //A Command Line Reader implementation:
     public class CLIReader : Reader

@@ -1,4 +1,4 @@
-﻿using SudokuProject.Exceptions;
+﻿using SudokuProj.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +7,7 @@ using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject
+namespace SudokuProj
 {
     //A Reader abstract class implementation:
     public abstract class Reader
