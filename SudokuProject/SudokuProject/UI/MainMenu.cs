@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject.UI
+namespace SudokuProj.UI
 {
     public static class MainMenu
     {
