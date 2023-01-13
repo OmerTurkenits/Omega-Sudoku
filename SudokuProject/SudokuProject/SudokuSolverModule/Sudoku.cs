@@ -1,4 +1,4 @@
-﻿using SudokuProj.Exceptions;
+﻿using SudokuProject.Exceptions;
 using System;
 using System.CodeDom;
 using System.Collections;
