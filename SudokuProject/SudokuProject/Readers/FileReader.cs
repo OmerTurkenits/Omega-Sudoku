@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProj
+namespace SudokuProject
 {
     //A File Reader implementation:
     public class FileReader : Reader

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProj
+namespace SudokuProject
 {
     //A Column Node implementation.
     public class ColumnNode : DancingNode

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProj
+namespace SudokuProject
 {
     //A Dancing Node implementation: CHECK
     public class DancingNode

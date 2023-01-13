@@ -9,7 +9,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProj
+namespace SudokuProject
 {
     //The Sudoku class implementation:
     public class Sudoku

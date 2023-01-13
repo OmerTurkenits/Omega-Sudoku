@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Collections;
 using System.Runtime.InteropServices;
 
-namespace SudokuProj
+namespace SudokuProject
 {
     //The Dancing Links List implementation.
     public class DLX

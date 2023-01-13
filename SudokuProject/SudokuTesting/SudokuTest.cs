@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using SudokuProj;
-using SudokuProj.Exceptions;
+using SudokuProject;
+using SudokuProject.Exceptions;
 using System.Security.Principal;
 using System.IO;
 
