@@ -1,5 +1,5 @@
-﻿using SudokuProject.Exceptions;
-using SudokuProject.UI;
+﻿using SudokuProj.Exceptions;
+using SudokuProj.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject
+namespace SudokuProj
 {
     //The Sudoku Solver Module:
     public class SudokuSolverModule

@@ -1,4 +1,4 @@
-﻿using SudokuProject.UI;
+﻿using SudokuProj.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject
+namespace SudokuProj
 {
-    internal class Program
+    public class Program
     {
         //The Programs Entry Point:
         static void Main(string[] args)

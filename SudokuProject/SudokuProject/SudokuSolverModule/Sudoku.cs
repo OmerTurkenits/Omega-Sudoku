@@ -1,4 +1,4 @@
-﻿using SudokuProject.Exceptions;
+﻿using SudokuProj.Exceptions;
 using System;
 using System.CodeDom;
 using System.Collections;
@@ -9,7 +9,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject
+namespace SudokuProj
 {
     //The Sudoku class implementation:
     public class Sudoku
