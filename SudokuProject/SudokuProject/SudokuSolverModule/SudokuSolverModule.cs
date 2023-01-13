@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace SudokuProject
 {
-    //The Sudoku Solver Module:
+    //The Sudoku Solver Module: 
     public class SudokuSolverModule
     {
         /// <summary>
-        /// 
+        /// A function that start the sudoku solving process.
         /// </summary>
         public static void start()
         {
