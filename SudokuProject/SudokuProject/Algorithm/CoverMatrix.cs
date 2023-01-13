@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SudokuProject
+namespace SudokuProj
 {
     //The Cover Matrix Class implementation:
     public class CoverMatrix
@@ -52,7 +52,7 @@ namespace SudokuProject
             }
 
             //Set this cover matrix as the new cover matrix
-            this.coverData = coverData;
+            this.coverData = coverData; 
         }
 
 
