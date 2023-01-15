@@ -51,6 +51,7 @@
     <Compile Include="Algorithm\CoverMatrix.cs" />
     <Compile Include="Algorithm\DancingNode.cs" />
     <Compile Include="Algorithm\DLX.cs" />
+    <Compile Include="Exceptions\InvalidInputException.cs" />
     <Compile Include="Exceptions\InvalidSudokuSizeException.cs" />
     <Compile Include="Exceptions\UnsolvableSudokuException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +62,7 @@
     </Compile>
     <Compile Include="Readers\CLIReader.cs" />
     <Compile Include="Readers\FileReader.cs" />
+    <Compile Include="Readers\InputProcessor.cs" />
     <Compile Include="Readers\Reader.cs" />
     <Compile Include="SudokuSolverModule\Config.cs" />
     <Compile Include="SudokuSolverModule\Program.cs" />
