@@ -1,4 +1,5 @@
 ﻿using SudokuProject.Exceptions;
+using SudokuProject.Readers;
 using SudokuProject.UI;
 using System;
 using System.Collections.Generic;
@@ -15,45 +16,31 @@ namespace SudokuProject
         /// <summary>
         /// A function that start the sudoku solving process.
         /// </summary>
-        public static void start()
+        public static void startProcess()
         {
-            //The user's choice.
-            int input;
             //The Reader object.
-            Reader r;
-            //The Sudoku board.
+            Reader r = SelectUserInput();
+            
+            //The user's input string.
+            string input;
+
+            //The sudoku board.
             byte[,] board;
 
-            //Get input from user.
-            int.TryParse(Console.ReadLine(), out input);
-
-            Console.ForegroundColor = Config.CONSOLE_WHITE;
-            Console.WriteLine();
-
-            //Selects the Reader type according to the user's choice.
-            switch (input)
-            {
-                //input from keyboard
-                case 1:
-                    r = new CLIReader();
-                    break;
-                //input from file
-                case 2:
-                    r = new FileReader();
-                    break;
-                //Defult: input from keyboard
-                default:
-                    r = new CLIReader();
-                    break;
-            }
-
             try {
-                //Reads the string and converts it to a matrix.
-                board = r.read();
+                //Reads the user's input.
+                input = r.read();
+                //converts the input to a matrix.
+                board = InputProcessor.convertStringToBoard(input);
                 //Creates a new sudoku object.
                 Sudoku sudoku = new Sudoku(board);
                 //Calls the solve function.
                 sudoku.solve();
+
+                //if the input came from a file, write the solution back to the same file.
+                if (r is FileReader)
+                    ((FileReader)r).writeSolution(sudoku);
+
             }
             catch (NullReferenceException){
                 Console.WriteLine("Wrong Input!");
@@ -66,9 +53,39 @@ namespace SudokuProject
             }
             catch(UnsolvableSudokuException){
                 Console.WriteLine("Unsolvable Sudoku!");
-            } 
+            }
+            catch (InvalidInputException)
+            {
+                Console.WriteLine("Incorrect Char Input!");
+            }
 
+        }
 
+        public static Reader SelectUserInput()
+        {
+            //The user's choice.
+            int input;
+
+            //Get choice from user.
+            int.TryParse(Console.ReadLine(), out input);
+
+            Console.ForegroundColor = Config.CONSOLE_WHITE;
+            Console.WriteLine();
+
+            //Selects the Reader type according to the user's choice.
+            switch (input)
+            {
+                //input from keyboard
+                case 1:
+                    return new CLIReader();
+                //input from file
+                case 2:
+                    return new FileReader();
+                //Defult: input from keyboard
+                default:
+                    return null;
+            }
+            
         }
     }
 }

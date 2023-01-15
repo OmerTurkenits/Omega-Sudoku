@@ -10,7 +10,7 @@ namespace SudokuProject
     public class Config
     {
         //The allowed sizes of sudokus.
-        public static int[] ALLOWED_SIZES = {9, 16, 25};
+        public static int[] ALLOWED_SIZES = {1, 4, 9, 16, 25};
         //The size of the current sudoku.
         public static int SIZE;
         //The number of constrains a sudoku has.

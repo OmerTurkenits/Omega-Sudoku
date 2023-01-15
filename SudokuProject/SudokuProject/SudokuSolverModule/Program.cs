@@ -26,7 +26,7 @@ namespace SudokuProject
             MainMenu.show();
 
             //Starts program's process.
-            SudokuSolverModule.start();
+            SudokuSolverModule.startProcess();
         }
 
     }
