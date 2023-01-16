@@ -8,6 +8,12 @@
 <b>- For my project I chose the Algorithm X and Dancing Links approach<b/>
 <br />
 <br />
+## The Input and the Output 💡
+<b>*The Project Input:*<b/>
+<br />
+<b>*The Project Output:*<b/>
+<br />
+<br />
 ## How To Use ❓
 <b>In the project the user has 2 input choices: input from the console and input from file.<b/>
     <br />
