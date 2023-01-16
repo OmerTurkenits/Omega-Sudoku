@@ -57,7 +57,11 @@ namespace SudokuProject.Readers
             return board;
         }
 
-
+        /// <summary>
+        /// A function that converts a sudoku board solution to a string.
+        /// </summary>
+        /// <param name="board"></param>
+        /// <returns></returns>
         public static string convertBoardToString(byte[,] board)
         {
             string solution = "";
