@@ -43,24 +43,43 @@ namespace SudokuProject
 
             }
             catch (NullReferenceException){
+                Console.ForegroundColor = Config.CONSOLE_ERROR;
                 Console.WriteLine("Wrong Input!");
             }
             catch (FileNotFoundException){
+                Console.ForegroundColor = Config.CONSOLE_ERROR;
                 Console.WriteLine("File Not Found!");
             }
             catch (InvalidSudokuSizeException){
+                Console.ForegroundColor = Config.CONSOLE_ERROR;
                 Console.WriteLine("Incorrect Input Size!");
             }
             catch(UnsolvableSudokuException){
+                Console.ForegroundColor = Config.CONSOLE_ERROR;
                 Console.WriteLine("Unsolvable Sudoku!");
             }
             catch (InvalidInputException)
             {
+                Console.ForegroundColor = Config.CONSOLE_ERROR;
                 Console.WriteLine("Incorrect Char Input!");
+            }
+            catch (ArgumentException)
+            {
+                Console.ForegroundColor = Config.CONSOLE_ERROR;
+                Console.WriteLine("Wrong Input!");
+            }
+            finally
+            {
+                Console.ForegroundColor = Config.CONSOLE_WHITE;
+                Console.WriteLine("\n");
             }
 
         }
 
+        /// <summary>
+        /// A function that allows the user to select his reader of choice.
+        /// </summary>
+        /// <returns> The reader of choice </returns>
         public static Reader SelectUserInput()
         {
             //The user's choice.

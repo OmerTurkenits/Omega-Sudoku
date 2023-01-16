@@ -13,12 +13,11 @@ namespace SudokuProject.UI
         /// </summary>
         public static void show()
         {
-            displayHeader();
             Console.WriteLine("--------------------------------------");
             Console.WriteLine("Press '1' to input from keyboard\nPress '2' to input from file");
             Console.WriteLine("--------------------------------------");
             Console.Write("Choice: ");
-            Console.ForegroundColor = Config.CONSOLE_CYAN;
+            Console.ForegroundColor = Config.MAIN_COLOR;
         }
 
         /// <summary>
@@ -26,7 +25,7 @@ namespace SudokuProject.UI
         /// </summary>
         public static void displayHeader()
         {
-            Console.ForegroundColor = Config.CONSOLE_CYAN;
+            Console.ForegroundColor = Config.MAIN_COLOR;
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();

@@ -27,8 +27,12 @@ namespace SudokuProject
         public const string TITLE_TEXT = "Omer's Sudoku Solver";
         //Console white color.
         public const ConsoleColor CONSOLE_WHITE = ConsoleColor.White;
-        //Console cyan color.
-        public const ConsoleColor CONSOLE_CYAN = ConsoleColor.Cyan;
+        //Console error color.
+        public const ConsoleColor CONSOLE_ERROR = ConsoleColor.Red;
+        //Console solved cells color
+        public const ConsoleColor SOLVED_CELLS_COLOR = ConsoleColor.DarkCyan;
+        //Console application main color
+        public const ConsoleColor MAIN_COLOR = ConsoleColor.Red;
 
     }
 }
