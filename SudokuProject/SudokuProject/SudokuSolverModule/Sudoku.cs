@@ -79,13 +79,14 @@ namespace SudokuProject
                     else
                         //Converts byte to char.
                         Console.Write(Convert.ToChar(this.board[i, j]+'0') + " ");
-                   
+
                     if (j % Config.SQUARE == Config.SQUARE - 1)
                         Console.Write("|");
                 }
 
                 if (i % Config.SQUARE == Config.SQUARE - 1)
                     Console.Write($"\n{String.Concat(Enumerable.Repeat(new String('-', Config.SQUARE * 2)+'|', Config.SQUARE))}");
+
             }
 
             Console.WriteLine();
@@ -105,7 +106,7 @@ namespace SudokuProject
                     //Shows what cells the algoritm has completed.
                     //Colors them in cyan.
                     if(this.board[i,j] == 0)
-                        Console.ForegroundColor = Config.CONSOLE_CYAN;
+                        Console.ForegroundColor = Config.SOLVED_CELLS_COLOR;
                     else
                         Console.ForegroundColor = Config.CONSOLE_WHITE;
 
