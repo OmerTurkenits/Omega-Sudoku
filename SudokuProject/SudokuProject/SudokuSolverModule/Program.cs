@@ -23,10 +23,15 @@ namespace SudokuProject
             Console.Title = Config.TITLE_TEXT;
 
             //Shows the menu.
-            MainMenu.show();
+            MainMenu.displayHeader();
 
             //Starts program's process.
-            SudokuSolverModule.startProcess();
+            while (true)
+            {
+                MainMenu.show();
+                SudokuSolverModule.startProcess();
+            }
+                
         }
 
     }
